@@ -10,12 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-	@IBOutlet weak var flipsLabel: UILabel!
-	var flipsCount : Int = 0 {
-		didSet {
-			flipsLabel.text = "Flips: \(flipsCount)";
-		}
-	}
+	@IBOutlet var cardButtons: [UIButton]!
 	
 	lazy var deck : Deck = PlayingCardDeck()
 	
@@ -35,7 +30,6 @@ class ViewController: UIViewController {
 				forState: UIControlState.Normal)
 			sender.setTitle("", forState: .Normal)
 		}
-		flipsCount++;
 	}
 
 }

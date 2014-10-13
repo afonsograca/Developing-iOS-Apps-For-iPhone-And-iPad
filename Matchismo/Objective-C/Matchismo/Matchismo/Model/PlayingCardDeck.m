@@ -19,7 +19,6 @@
 				PlayingCard *card = [[PlayingCard alloc] init];
 				card.suit = suit;
 				card.rank = i;
-				
 				[self addCard:card];
 			}
 		}
