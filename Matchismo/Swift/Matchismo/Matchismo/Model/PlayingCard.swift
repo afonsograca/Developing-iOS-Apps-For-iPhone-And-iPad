@@ -38,4 +38,19 @@ class PlayingCard: Card {
 	class func maxRank() -> Int {
 		return PlayingCard.rankStrings().count - 1
 	}
+	
+	override func match(otherCards: [Card]) -> Int {
+		var score = 0
+		if otherCards.count == 1 {
+			if let otherCard = otherCards.first! as? PlayingCard {
+				if otherCard.suit == self.suit {
+					score += 1
+				}
+				else if otherCard.rank == self.rank {
+					score += 4
+				}
+			}
+		}
+		return score
+	}
 }

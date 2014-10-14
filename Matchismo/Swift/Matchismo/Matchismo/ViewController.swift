@@ -12,24 +12,37 @@ class ViewController: UIViewController {
 
 	@IBOutlet var cardButtons: [UIButton]!
 	
-	lazy var deck : Deck = PlayingCardDeck()
+	lazy var game : CardMatchingGame = CardMatchingGame(cardCount: self.cardButtons.count, deck: self.createDeck())
+	
+	func createDeck() -> Deck {
+		return PlayingCardDeck()
+	}
 	
 	@IBAction func touchCardButton(sender: UIButton) {
-		if sender.currentTitle == nil {
-			sender.setTitle("", forState: .Normal)
-		}
-		if sender.currentTitle!.isEmpty {
-			let card = self.deck.drawRandomCard()
+		let chosenButtonIndex = find(self.cardButtons, sender)
+		self.game.chooseCardAt(chosenButtonIndex!)
+		
+		self.updateUI()
+	}
+	
+	func updateUI() {
+		for cardButton in self.cardButtons {
+			let chosenButtonIndex = find(self.cardButtons, cardButton)
+			let card = self.game.cardAt(chosenButtonIndex!)
 			
-			sender.setBackgroundImage(UIImage(named: "cardFront"),
-				forState: .Normal)
-			sender.setTitle(card!.contents, forState: .Normal)
+			cardButton.setTitle(self.titleForCard(card!), forState: .Normal)
+			cardButton.setBackgroundImage(self.backgroundImageForCard(card!), forState: .Normal)
+			cardButton.enabled = !card!.matched
 		}
-		else {
-			sender.setBackgroundImage(UIImage(named: "cardBack"),
-				forState: UIControlState.Normal)
-			sender.setTitle("", forState: .Normal)
-		}
+		
+	}
+	
+	func titleForCard(card : Card) -> String {
+		return card.chosen ? card.contents : ""
+	}
+	
+	func backgroundImageForCard(card : Card) -> UIImage {
+		return UIImage(named: card.chosen ? "cardFront" : "cardBack")
 	}
 
 }
