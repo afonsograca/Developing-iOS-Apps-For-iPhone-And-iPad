@@ -13,16 +13,14 @@ private let costToChoose = 1, mismatchPenalty = 2, matchBonus = 4
 class CardMatchingGame: NSObject {
 	
 	
-	private(set) var score : Int {
-		get { return self.score }
-		set { self.score = newValue }
-	}
+	private(set) lazy var score = 0
 	
 	private lazy var cards = [Card]()
 	
 	init(cardCount: Int, deck : Deck){
 		
 		super.init()
+		
 		for index in 0..<cardCount {
 			var possibleCard : Card? = deck.drawRandomCard()
 			if let card = possibleCard? {
@@ -40,22 +38,24 @@ class CardMatchingGame: NSObject {
 	
 	func chooseCardAt(index : Int) {
 		
-		if let card = self.cardAt(index) {
+		if let card = self.cardAt(index) as? PlayingCard {
 			if !card.matched {
 				if card.chosen {
 					card.chosen = false
 				}
 				else {
-					for otherCard in self.cards {
-						let matchScore = card.match([card])
-						if matchScore != 0 {
-							self.score += matchScore * matchBonus
-							card.matched = true
-							otherCard.matched = true
-						}
-						else {
-							otherCard.chosen = false
-							self.score -= mismatchPenalty
+					for otherCard in self.cards{
+						if otherCard.chosen && !otherCard.matched {
+							let matchScore = card.match([otherCard])
+							if matchScore != 0 {
+								self.score += matchScore * matchBonus
+								card.matched = true
+								otherCard.matched = true
+							}
+							else {
+								otherCard.chosen = false
+								self.score -= mismatchPenalty
+							}
 						}
 					}
 					card.chosen = true

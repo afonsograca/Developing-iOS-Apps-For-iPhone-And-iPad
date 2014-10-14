@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
 	@IBOutlet var cardButtons: [UIButton]!
+	@IBOutlet weak var scoreLabel: UILabel!
 	
 	lazy var game : CardMatchingGame = CardMatchingGame(cardCount: self.cardButtons.count, deck: self.createDeck())
 	
@@ -34,7 +35,7 @@ class ViewController: UIViewController {
 			cardButton.setBackgroundImage(self.backgroundImageForCard(card!), forState: .Normal)
 			cardButton.enabled = !card!.matched
 		}
-		
+		self.scoreLabel.text = "Score: \(self.game.score)"
 	}
 	
 	func titleForCard(card : Card) -> String {
