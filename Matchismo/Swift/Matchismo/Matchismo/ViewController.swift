@@ -12,6 +12,8 @@ class ViewController: UIViewController {
 
 	@IBOutlet var cardButtons: [UIButton]!
 	@IBOutlet weak var scoreLabel: UILabel!
+	@IBOutlet weak var playLabel: UILabel!
+	@IBOutlet weak var gameModeSwitch: UISegmentedControl!
 	
 	lazy var game : CardMatchingGame = CardMatchingGame(cardCount: self.cardButtons.count, deck: self.createDeck())
 	
@@ -24,6 +26,12 @@ class ViewController: UIViewController {
 		self.game.chooseCardAt(chosenButtonIndex!)
 		
 		self.updateUI()
+	}
+	
+	@IBAction func touchReDealButton(sender: AnyObject) {
+	}
+	
+	@IBAction func touchGameModeSwitch(sender: AnyObject) {
 	}
 	
 	func updateUI() {
