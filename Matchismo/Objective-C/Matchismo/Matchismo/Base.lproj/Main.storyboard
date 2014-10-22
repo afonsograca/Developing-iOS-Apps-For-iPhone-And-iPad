@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
@@ -102,8 +102,8 @@
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="xWc-LO-ueI"/>
                                         <exclude reference="1pU-4W-Tim"/>
+                                        <exclude reference="xWc-LO-ueI"/>
                                     </mask>
                                 </variation>
                                 <connections>
@@ -197,8 +197,8 @@
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="sRe-jV-X94"/>
                                         <exclude reference="Apk-Mb-YaD"/>
+                                        <exclude reference="sRe-jV-X94"/>
                                     </mask>
                                 </variation>
                                 <connections>
@@ -221,8 +221,8 @@
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="Z9b-Ze-vfx"/>
                                         <exclude reference="Z6B-Ew-BRw"/>
+                                        <exclude reference="Z9b-Ze-vfx"/>
                                     </mask>
                                 </variation>
                                 <connections>
@@ -340,8 +340,8 @@
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="qTM-qC-8Vt"/>
                                         <exclude reference="MoW-4M-l3H"/>
+                                        <exclude reference="qTM-qC-8Vt"/>
                                     </mask>
                                 </variation>
                                 <connections>
@@ -364,8 +364,8 @@
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="IBZ-qR-joQ"/>
                                         <exclude reference="Eit-sH-h34"/>
+                                        <exclude reference="IBZ-qR-joQ"/>
                                     </mask>
                                 </variation>
                                 <connections>
@@ -385,8 +385,8 @@
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="NI2-hv-PUQ"/>
                                         <exclude reference="5W1-hU-Amh"/>
+                                        <exclude reference="NI2-hv-PUQ"/>
                                     </mask>
                                 </variation>
                                 <connections>
@@ -435,8 +435,8 @@
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="XmP-y5-rCf"/>
                                         <exclude reference="GU7-C6-mWd"/>
+                                        <exclude reference="XmP-y5-rCf"/>
                                     </mask>
                                 </variation>
                                 <connections>
@@ -530,8 +530,8 @@
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="oQd-IX-afk"/>
                                         <exclude reference="dm9-2w-lzw"/>
+                                        <exclude reference="oQd-IX-afk"/>
                                     </mask>
                                 </variation>
                                 <connections>
@@ -578,8 +578,8 @@
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="eeK-NZ-88V"/>
                                         <exclude reference="d8n-Ou-4Fh"/>
+                                        <exclude reference="eeK-NZ-88V"/>
                                     </mask>
                                 </variation>
                                 <connections>
@@ -649,8 +649,8 @@
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="kNP-Ok-Za8"/>
                                         <exclude reference="XZv-hZ-7pn"/>
+                                        <exclude reference="kNP-Ok-Za8"/>
                                     </mask>
                                 </variation>
                                 <connections>
@@ -673,8 +673,8 @@
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="TWH-4C-2en"/>
                                         <exclude reference="8Q5-gd-yMi"/>
+                                        <exclude reference="TWH-4C-2en"/>
                                     </mask>
                                 </variation>
                                 <connections>
@@ -724,8 +724,8 @@
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="MJJ-vJ-QrU"/>
                                         <exclude reference="18d-gc-iod"/>
+                                        <exclude reference="MJJ-vJ-QrU"/>
                                     </mask>
                                 </variation>
                                 <connections>

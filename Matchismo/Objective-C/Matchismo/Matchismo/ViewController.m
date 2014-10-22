@@ -37,6 +37,7 @@
 
 - (IBAction)touchCardButton:(UIButton *)sender {
 	self.gameModeSwitch.enabled = false;
+	self.game.noCardsToMatch = self.gameModeSwitch.selectedSegmentIndex+1;
 	NSUInteger chosenButtonIndex = [self.cardButtons indexOfObject:sender];
 	[self.game chooseCardAtIndex:chosenButtonIndex];
 	

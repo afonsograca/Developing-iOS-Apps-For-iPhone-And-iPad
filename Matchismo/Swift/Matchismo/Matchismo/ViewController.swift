@@ -22,16 +22,16 @@ class ViewController: UIViewController {
 	}
 	
 	@IBAction func touchCardButton(sender: UIButton) {
+		self.gameModeSwitch.enabled = false
 		let chosenButtonIndex = find(self.cardButtons, sender)
 		self.game.chooseCardAt(chosenButtonIndex!)
 		
 		self.updateUI()
 	}
 	
-	@IBAction func touchReDealButton(sender: AnyObject) {
-	}
-	
-	@IBAction func touchGameModeSwitch(sender: AnyObject) {
+	@IBAction func touchReDealButton(sender: UIButton) {
+		self.gameModeSwitch.enabled = true
+		game = CardMatchingGame(cardCount: self.cardButtons.count, deck: self.createDeck())
 	}
 	
 	func updateUI() {

@@ -20,5 +20,7 @@
 - (Card *)cardAtIndex: (NSUInteger)index;
 
 @property (nonatomic, readonly) NSInteger score;
+@property (nonatomic) NSInteger noCardsToMatch;
+@property (nonatomic, strong) NSString *resultString;
 
 @end
