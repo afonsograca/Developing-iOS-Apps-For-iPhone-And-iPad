@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="Photomania Map/AddPhotoViewController.strings" source-language="en" datatype="plaintext" target-language="en">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="6.1.1" build-num="6A2008a"/>
+    </header>
+    <body>
+      <trans-unit id="ALERT_CANT_ADD_PHOTO">
+        <source>ALERT_CANT_ADD_PHOTO</source>
+        <note>Alert message delivered when there is something that prevents the user from adding a new photo to the database that the user can do nothing about.</note>
+      </trans-unit>
+      <trans-unit id="ALERT_DISMISS_BUTTON">
+        <source>ALERT_DISMISS_BUTTON</source>
+        <note>Text on button which dismisses an alert which explained a problem adding a photo to the database.</note>
+      </trans-unit>
+      <trans-unit id="ALERT_LOCATION_NETWORK_DISABLED">
+        <source>ALERT_LOCATION_NETWORK_DISABLED</source>
+        <note>User tried to dismiss modal controller to add a photo, but the location the photo was taken could not be found maybe because the user has no network connection active.</note>
+      </trans-unit>
+      <trans-unit id="ALERT_LOCATION_SERVICES_DISABLED">
+        <source>ALERT_LOCATION_SERVICES_DISABLED</source>
+        <note>User tried to dismiss modal controller to add a photo, but the location the photo was taken could not be found because the user needs to enable location services in the Settings application.</note>
+      </trans-unit>
+      <trans-unit id="ALERT_LOCATION_UNKNOWN">
+        <source>ALERT_LOCATION_UNKNOWN</source>
+        <note>User tried to dismiss modal controller to add a photo, but the controller cannot figure out the location the photo was taken.</note>
+      </trans-unit>
+      <trans-unit id="ALERT_LOCATION_UNKNOWN_YET">
+        <source>ALERT_LOCATION_UNKNOWN_YET</source>
+        <note>User tried to dismiss modal controller to add a photo, but the controller had not (yet) found the location the photo was taken.</note>
+      </trans-unit>
+      <trans-unit id="ALERT_NO_PHOTO_TAKEN">
+        <source>ALERT_NO_PHOTO_TAKEN</source>
+        <note>User tried to dismiss modal controller to add a photo, but had not taken a photo at that point.</note>
+      </trans-unit>
+      <trans-unit id="ALERT_TITLE_ADD_PHOTO">
+        <source>ALERT_TITLE_ADD_PHOTO</source>
+        <note>Title of an alert that appears when there is a problem adding a photo to the database.</note>
+      </trans-unit>
+      <trans-unit id="ALERT_TITLE_REQUIRED">
+        <source>ALERT_TITLE_REQUIRED</source>
+        <note>User tried to dismiss modal controller to add a photo, but had not specified a title for the photo, which is required.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Photomania Map/Base.lproj/LaunchScreen.xib" source-language="en" datatype="plaintext" target-language="en">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="6.1.1" build-num="6A2008a"/>
+    </header>
+    <body>
+      <trans-unit id="8ie-xW-0ye.text">
+        <source>  Copyright (c) 2014 Afonso Graça. All rights reserved.</source>
+        <note>Class = "IBUILabel"; text = "  Copyright (c) 2014 Afonso Graça. All rights reserved."; ObjectID = "8ie-xW-0ye";</note>
+      </trans-unit>
+      <trans-unit id="kId-c2-rCX.text">
+        <source>Photomania Map</source>
+        <note>Class = "IBUILabel"; text = "Photomania Map"; ObjectID = "kId-c2-rCX";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Photomania Map/Base.lproj/Main.storyboard" source-language="en" datatype="plaintext" target-language="en">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="6.1.1" build-num="6A2008a"/>
+    </header>
+    <body>
+      <trans-unit id="4RO-a3-edT.normalTitle">
+        <source>Cancel</source>
+        <note>Class = "IBUIButton"; normalTitle = "Cancel"; ObjectID = "4RO-a3-edT";</note>
+      </trans-unit>
+      <trans-unit id="5hM-e8-ElN.title">
+        <source>EmptyViewController</source>
+        <note>Class = "IBUIViewController"; title = "EmptyViewController"; ObjectID = "5hM-e8-ElN";</note>
+      </trans-unit>
+      <trans-unit id="6iX-Ed-GNY.text">
+        <source>Subtitle</source>
+        <note>Class = "IBUILabel"; text = "Subtitle"; ObjectID = "6iX-Ed-GNY";</note>
+      </trans-unit>
+      <trans-unit id="8dI-Qk-qrF.text">
+        <source>http://www.afonsograca.com</source>
+        <note>Class = "IBUITextView"; text = "http://www.afonsograca.com"; ObjectID = "8dI-Qk-qrF";</note>
+      </trans-unit>
+      <trans-unit id="9ev-rA-k9b.text">
+        <source>No Photo Selected</source>
+        <note>Class = "IBUILabel"; text = "No Photo Selected"; ObjectID = "9ev-rA-k9b";</note>
+      </trans-unit>
+      <trans-unit id="9nf-Og-5ta.text">
+        <source>Title</source>
+        <note>Class = "IBUILabel"; text = "Title"; ObjectID = "9nf-Og-5ta";</note>
+      </trans-unit>
+      <trans-unit id="AZb-Yk-wns.title">
+        <source>URL</source>
+        <note>Class = "IBUIBarButtonItem"; title = "URL"; ObjectID = "AZb-Yk-wns";</note>
+      </trans-unit>
+      <trans-unit id="Cab-LK-KDq.text">
+        <source>Title</source>
+        <note>Class = "IBUILabel"; text = "Title"; ObjectID = "Cab-LK-KDq";</note>
+      </trans-unit>
+      <trans-unit id="XhR-Qz-wH1.text">
+        <source>Title</source>
+        <note>Class = "IBUILabel"; text = "Title"; ObjectID = "XhR-Qz-wH1";</note>
+      </trans-unit>
+      <trans-unit id="dKh-a8-VGF.text">
+        <source>Subtitle</source>
+        <note>Class = "IBUILabel"; text = "Subtitle"; ObjectID = "dKh-a8-VGF";</note>
+      </trans-unit>
+      <trans-unit id="dXq-lB-DYL.text">
+        <source>Subtitle</source>
+        <note>Class = "IBUILabel"; text = "Subtitle"; ObjectID = "dXq-lB-DYL";</note>
+      </trans-unit>
+      <trans-unit id="hfq-Mz-hgk.normalTitle">
+        <source>Take Photo</source>
+        <note>Class = "IBUIButton"; normalTitle = "Take Photo"; ObjectID = "hfq-Mz-hgk";</note>
+      </trans-unit>
+      <trans-unit id="ptK-Fg-EI8.normalTitle">
+        <source>Done</source>
+        <note>Class = "IBUIButton"; normalTitle = "Done"; ObjectID = "ptK-Fg-EI8";</note>
+      </trans-unit>
+      <trans-unit id="xYo-qE-g1l.title">
+        <source>Photographers</source>
+        <note>Class = "IBUINavigationController"; title = "Photographers"; ObjectID = "xYo-qE-g1l";</note>
+      </trans-unit>
+      <trans-unit id="yb5-9P-BNX.title">
+        <source>Shutterbug</source>
+        <note>Class = "IBUINavigationItem"; title = "Shutterbug"; ObjectID = "yb5-9P-BNX";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Photomania Map/Info.plist" source-language="en" datatype="plaintext" target-language="en">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="6.1.1" build-num="6A2008a"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+      </trans-unit>
+      <trans-unit id="CFBundleShortVersionString">
+        <source>1.0</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="PhotomaniaMapTests/Info.plist" source-language="en" datatype="plaintext" target-language="en">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="6.1.1" build-num="6A2008a"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+      </trans-unit>
+      <trans-unit id="CFBundleShortVersionString">
+        <source>1.0</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

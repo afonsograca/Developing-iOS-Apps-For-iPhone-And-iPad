@@ -1,0 +1,27 @@
+/* Alert message delivered when there is something that prevents the user from adding a new photo to the database that the user can do nothing about. */
+"ALERT_CANT_ADD_PHOTO" = "S.o.r.r.y, t.h.i.s d.e.v.i.c.e c.a.n.n.o.t a.d.d a p.h.o.t.o.";
+
+/* Text on button which dismisses an alert which explained a problem adding a photo to the database. */
+"ALERT_DISMISS_BUTTON" = ".O.K.";
+
+/* User tried to dismiss modal controller to add a photo, but the location the photo was taken could not be found maybe because the user has no network connection active. */
+"ALERT_LOCATION_NETWORK_DISABLED" = "C.a.n't f.i.g.u.r.e o.u.t w.h.e.r.e t.h.i.s p.h.o.t.o i.s b.e.i.n.g t.a.k.e.n.  V.e.r.i.f.y y.o.u.r c.o.n.n.e.c.t.i.o.n t.o t.h.e n.e.t.w.o.r.k.";
+
+/* User tried to dismiss modal controller to add a photo, but the location the photo was taken could not be found because the user needs to enable location services in the Settings application. */
+"ALERT_LOCATION_SERVICES_DISABLED" = "L.o.c.a.t.i.o.n S.e.r.v.i.c.e.s d.i.s.a.b.l.e.d u.n.d.e.r P.r.i.v.a.c.y i.n S.e.t.t.i.n.g.s a.p.p.l.i.c.a.t.i.o.n.";
+
+/* User tried to dismiss modal controller to add a photo, but the controller cannot figure out the location the photo was taken. */
+"ALERT_LOCATION_UNKNOWN" = "C.a.n't f.i.g.u.r.e o.u.t w.h.e.r.e t.h.i.s p.h.o.t.o i.s b.e.i.n.g t.a.k.e.n, s.o.r.r.y.";
+
+/* User tried to dismiss modal controller to add a photo, but the controller had not (yet) found the location the photo was taken. */
+"ALERT_LOCATION_UNKNOWN_YET" = "C.o.u.l.d.n't f.i.g.u.r.e o.u.t w.h.e.r.e t.h.i.s p.h.o.t.o w.a.s t.a.k.e.n (y.e.t).";
+
+/* User tried to dismiss modal controller to add a photo, but had not taken a photo at that point. */
+"ALERT_NO_PHOTO_TAKEN" = "N.o p.h.o.t.o t.a.k.e.n!";
+
+/* Title of an alert that appears when there is a problem adding a photo to the database. */
+"ALERT_TITLE_ADD_PHOTO" = "A.d.d P.h.o.t.o";
+
+/* User tried to dismiss modal controller to add a photo, but had not specified a title for the photo, which is required. */
+"ALERT_TITLE_REQUIRED" = "T.i.t.l.e r.e.q.u.i.r.e.d!";
+

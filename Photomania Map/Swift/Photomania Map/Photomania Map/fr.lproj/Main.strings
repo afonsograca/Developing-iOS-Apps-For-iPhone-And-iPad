@@ -1,0 +1,45 @@
+
+/* Class = "IBUIButton"; normalTitle = "Cancel"; ObjectID = "4RO-a3-edT"; */
+"4RO-a3-edT.normalTitle" = ".C.a.n.c.e.l.";
+
+/* Class = "IBUIViewController"; title = "EmptyViewController"; ObjectID = "5hM-e8-ElN"; */
+"5hM-e8-ElN.title" = "EmptyViewController";
+
+/* Class = "IBUILabel"; text = "Subtitle"; ObjectID = "6iX-Ed-GNY"; */
+"6iX-Ed-GNY.text" = "Subtitle";
+
+/* Class = "IBUITextView"; text = "http://www.afonsograca.com"; ObjectID = "8dI-Qk-qrF"; */
+"8dI-Qk-qrF.text" = "http://www.afonsograca.com";
+
+/* Class = "IBUILabel"; text = "No Photo Selected"; ObjectID = "9ev-rA-k9b"; */
+"9ev-rA-k9b.text" = ".N.o. .P.ho.t.o. .S.e.l.e.c.t.e.d.";
+
+/* Class = "IBUILabel"; text = "Title"; ObjectID = "9nf-Og-5ta"; */
+"9nf-Og-5ta.text" = "Title";
+
+/* Class = "IBUIBarButtonItem"; title = "URL"; ObjectID = "AZb-Yk-wns"; */
+"AZb-Yk-wns.title" = ".U.R.L.";
+
+/* Class = "IBUILabel"; text = "Title"; ObjectID = "Cab-LK-KDq"; */
+"Cab-LK-KDq.text" = "Title";
+
+/* Class = "IBUILabel"; text = "Title"; ObjectID = "XhR-Qz-wH1"; */
+"XhR-Qz-wH1.text" = ".T.i.t.l.e.";
+
+/* Class = "IBUILabel"; text = "Subtitle"; ObjectID = "dKh-a8-VGF"; */
+"dKh-a8-VGF.text" = "Subtitle";
+
+/* Class = "IBUILabel"; text = "Subtitle"; ObjectID = "dXq-lB-DYL"; */
+"dXq-lB-DYL.text" = ".S.u.bt.i.t.l.e.";
+
+/* Class = "IBUIButton"; normalTitle = "Take Photo"; ObjectID = "hfq-Mz-hgk"; */
+"hfq-Mz-hgk.normalTitle" = ".T.a.k.e. P.h.o.t.o.";
+
+/* Class = "IBUIButton"; normalTitle = "Done"; ObjectID = "ptK-Fg-EI8"; */
+"ptK-Fg-EI8.normalTitle" = "D.o.n.e.";
+
+/* Class = "IBUINavigationController"; title = "Photographers"; ObjectID = "xYo-qE-g1l"; */
+"xYo-qE-g1l.title" = ".P.h.o.t.o.g.r.a.p.h.e.r.s.";
+
+/* Class = "IBUINavigationItem"; title = "Shutterbug"; ObjectID = "yb5-9P-BNX"; */
+"yb5-9P-BNX.title" = ".S.h.u.t.t.e.r.b.u.g.";

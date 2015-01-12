@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="SuperCard" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,10 +15,48 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z9a-gd-clW" customClass="PlayingCardView" customModule="SuperCard" customModuleProvider="target">
+                                <rect key="frame" x="214" y="162" width="173" height="275"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="275" id="dL2-Ll-pkK"/>
+                                    <constraint firstAttribute="width" constant="173" id="oHE-A5-BWq"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="vg3-Kk-liq" appends="YES" id="OWp-VZ-ThE"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.25098040699958801" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="z9a-gd-clW" secondAttribute="centerY" id="Fi6-LA-m99"/>
+                            <constraint firstAttribute="centerX" secondItem="z9a-gd-clW" secondAttribute="centerX" id="WBv-IY-Egm"/>
+                            <constraint firstItem="z9a-gd-clW" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="214" id="bbZ-9Y-B5D"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="z9a-gd-clW" secondAttribute="bottom" constant="163" id="hRK-iU-zl2"/>
+                            <constraint firstItem="z9a-gd-clW" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="142" id="nTy-Zx-W4I"/>
+                            <constraint firstItem="z9a-gd-clW" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="rPk-nX-e2d"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="bbZ-9Y-B5D"/>
+                                <exclude reference="nTy-Zx-W4I"/>
+                                <exclude reference="rPk-nX-e2d"/>
+                                <exclude reference="hRK-iU-zl2"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="playingCardView" destination="z9a-gd-clW" id="Iob-dM-uCf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="vg3-Kk-liq">
+                    <connections>
+                        <action selector="swipe:" destination="vXZ-lx-hvc" id="UFM-eJ-6lG"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
         </scene>
     </scenes>

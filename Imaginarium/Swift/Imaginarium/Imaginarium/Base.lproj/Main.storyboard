@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dDl-iU-jIa">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Imaginarium-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Imaginarium" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1r3-vZ-Bfq">
+                                <rect key="frame" x="271" y="285" width="58" height="30"/>
+                                <state key="normal" title="Peppers">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="guu-Tw-OSf" kind="show" identifier="photo_2" id="mG3-dT-bxR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tge-11-6ya">
+                                <rect key="frame" x="277" y="247" width="46" height="30"/>
+                                <state key="normal" title="Flower">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="guu-Tw-OSf" kind="show" identifier="photo_1" id="faj-2V-FMh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tEz-hf-XwC">
+                                <rect key="frame" x="273" y="323" width="55" height="30"/>
+                                <state key="normal" title="Jellyfish">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="guu-Tw-OSf" kind="show" identifier="photo_3" id="Omc-Px-2OJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1r3-vZ-Bfq" firstAttribute="centerXWithinMargins" secondItem="tEz-hf-XwC" secondAttribute="centerX" id="08J-ne-NG6"/>
+                            <constraint firstAttribute="centerX" secondItem="1r3-vZ-Bfq" secondAttribute="centerX" id="Nhg-GN-J61"/>
+                            <constraint firstItem="tEz-hf-XwC" firstAttribute="top" secondItem="1r3-vZ-Bfq" secondAttribute="bottom" constant="8" symbolic="YES" id="UG8-4C-sXo"/>
+                            <constraint firstItem="tge-11-6ya" firstAttribute="centerXWithinMargins" secondItem="1r3-vZ-Bfq" secondAttribute="centerXWithinMargins" id="cjL-IJ-GQJ"/>
+                            <constraint firstItem="1r3-vZ-Bfq" firstAttribute="top" secondItem="tge-11-6ya" secondAttribute="bottom" constant="8" symbolic="YES" id="gEb-0g-dfw"/>
+                            <constraint firstAttribute="centerY" secondItem="1r3-vZ-Bfq" secondAttribute="centerY" id="wgr-Yp-vlD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Imaginarium" id="AL4-V3-hqN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1003" y="370"/>
+        </scene>
+        <!--Image View Controller-->
+        <scene sceneID="bMj-Qs-it1">
+            <objects>
+                <viewController id="guu-Tw-OSf" customClass="ImageViewController" customModule="Imaginarium" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gpg-vZ-9Sh"/>
+                        <viewControllerLayoutGuide type="bottom" id="BWH-LQ-Sub"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HXw-2h-aJh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wVw-G6-4ag">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </scrollView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="8s9-Hg-cVt">
+                                <rect key="frame" x="290" y="290" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wVw-G6-4ag" firstAttribute="leading" secondItem="HXw-2h-aJh" secondAttribute="leading" id="NOR-Rv-ZGO"/>
+                            <constraint firstAttribute="centerX" secondItem="8s9-Hg-cVt" secondAttribute="centerX" id="Oxq-76-jsQ"/>
+                            <constraint firstAttribute="centerY" secondItem="8s9-Hg-cVt" secondAttribute="centerY" id="bRK-o4-q4Z"/>
+                            <constraint firstItem="wVw-G6-4ag" firstAttribute="top" secondItem="HXw-2h-aJh" secondAttribute="top" id="fms-JJ-xeG"/>
+                            <constraint firstItem="wVw-G6-4ag" firstAttribute="bottom" secondItem="BWH-LQ-Sub" secondAttribute="top" id="hwt-kg-Snw"/>
+                            <constraint firstAttribute="trailing" secondItem="wVw-G6-4ag" secondAttribute="trailing" id="i7P-Er-XSI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scrollview" destination="wVw-G6-4ag" id="wog-34-QtQ"/>
+                        <outlet property="spinner" destination="8s9-Hg-cVt" id="KLI-GG-oWf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UUR-LW-D4V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1684" y="370"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="69W-14-MED">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dDl-iU-jIa" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KRq-zm-vx8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="QtH-O4-8UQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pQM-0d-sZF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="321" y="370"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="faj-2V-FMh"/>
+    </inferredMetricsTieBreakers>
+</document>

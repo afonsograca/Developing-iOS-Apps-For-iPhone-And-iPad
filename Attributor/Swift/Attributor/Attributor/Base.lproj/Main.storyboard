@@ -192,16 +192,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 colourful characters" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hrQ-Ql-hUj">
-                                <rect key="frame" x="16" y="72" width="568" height="21"/>
+                                <rect key="frame" x="16" y="571" width="568" height="20.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="wuE-PM-xfa"/>
+                                    <constraint firstAttribute="height" constant="21" id="Roo-CU-sgv"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Roo-CU-sgv"/>
+                                    </mask>
+                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 outlined characters" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q2n-gi-CcD">
-                                <rect key="frame" x="16" y="101" width="568" height="21"/>
+                                <rect key="frame" x="16" y="543" width="161.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -209,13 +214,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="hrQ-Ql-hUj" firstAttribute="trailing" secondItem="Q2n-gi-CcD" secondAttribute="trailing" id="219-he-iu0"/>
-                            <constraint firstItem="hrQ-Ql-hUj" firstAttribute="leading" secondItem="cZ5-To-ZhF" secondAttribute="leadingMargin" id="DU0-Gb-w8W"/>
-                            <constraint firstItem="hrQ-Ql-hUj" firstAttribute="top" secondItem="qEA-hq-8Td" secondAttribute="bottom" constant="8" symbolic="YES" id="G5r-lN-joK"/>
-                            <constraint firstItem="hrQ-Ql-hUj" firstAttribute="leading" secondItem="Q2n-gi-CcD" secondAttribute="leading" id="KKG-5M-ILK"/>
-                            <constraint firstItem="YTB-Bf-fMs" firstAttribute="top" secondItem="Q2n-gi-CcD" secondAttribute="bottom" constant="478" id="T1c-Oq-Pec"/>
-                            <constraint firstItem="Q2n-gi-CcD" firstAttribute="top" secondItem="hrQ-Ql-hUj" secondAttribute="bottom" constant="8" symbolic="YES" id="fsP-S1-zaI"/>
-                            <constraint firstItem="hrQ-Ql-hUj" firstAttribute="trailing" secondItem="cZ5-To-ZhF" secondAttribute="trailingMargin" id="ucZ-Jt-SQM"/>
+                            <constraint firstItem="hrQ-Ql-hUj" firstAttribute="leading" secondItem="cZ5-To-ZhF" secondAttribute="leadingMargin" id="CLq-Iw-gsY"/>
+                            <constraint firstItem="Q2n-gi-CcD" firstAttribute="leading" secondItem="hrQ-Ql-hUj" secondAttribute="leading" id="eJ9-1u-GAq"/>
+                            <constraint firstItem="YTB-Bf-fMs" firstAttribute="top" secondItem="hrQ-Ql-hUj" secondAttribute="bottom" constant="8" symbolic="YES" id="j86-Aj-0hk"/>
+                            <constraint firstItem="hrQ-Ql-hUj" firstAttribute="top" secondItem="Q2n-gi-CcD" secondAttribute="bottom" constant="8" symbolic="YES" id="lud-6f-abK"/>
+                            <constraint firstItem="hrQ-Ql-hUj" firstAttribute="trailing" secondItem="cZ5-To-ZhF" secondAttribute="trailingMargin" id="ncP-nz-oB7"/>
                         </constraints>
                     </view>
                     <connections>

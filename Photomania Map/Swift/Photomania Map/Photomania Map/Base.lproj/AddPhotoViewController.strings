@@ -1,0 +1,27 @@
+/* Alert message delivered when there is something that prevents the user from adding a new photo to the database that the user can do nothing about. */
+"ALERT_CANT_ADD_PHOTO" = "ALERT_CANT_ADD_PHOTO";
+
+/* Text on button which dismisses an alert which explained a problem adding a photo to the database. */
+"ALERT_DISMISS_BUTTON" = "ALERT_DISMISS_BUTTON";
+
+/* User tried to dismiss modal controller to add a photo, but the location the photo was taken could not be found maybe because the user has no network connection active. */
+"ALERT_LOCATION_NETWORK_DISABLED" = "ALERT_LOCATION_NETWORK_DISABLED";
+
+/* User tried to dismiss modal controller to add a photo, but the location the photo was taken could not be found because the user needs to enable location services in the Settings application. */
+"ALERT_LOCATION_SERVICES_DISABLED" = "ALERT_LOCATION_SERVICES_DISABLED";
+
+/* User tried to dismiss modal controller to add a photo, but the controller cannot figure out the location the photo was taken. */
+"ALERT_LOCATION_UNKNOWN" = "ALERT_LOCATION_UNKNOWN";
+
+/* User tried to dismiss modal controller to add a photo, but the controller had not (yet) found the location the photo was taken. */
+"ALERT_LOCATION_UNKNOWN_YET" = "ALERT_LOCATION_UNKNOWN_YET";
+
+/* User tried to dismiss modal controller to add a photo, but had not taken a photo at that point. */
+"ALERT_NO_PHOTO_TAKEN" = "ALERT_NO_PHOTO_TAKEN";
+
+/* Title of an alert that appears when there is a problem adding a photo to the database. */
+"ALERT_TITLE_ADD_PHOTO" = "ALERT_TITLE_ADD_PHOTO";
+
+/* User tried to dismiss modal controller to add a photo, but had not specified a title for the photo, which is required. */
+"ALERT_TITLE_REQUIRED" = "ALERT_TITLE_REQUIRED";
+
